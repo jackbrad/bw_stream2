@@ -1,0 +1,248 @@
+[
+    {
+        "name": "event_timestamp",
+        "description": "Pub/Sub event timestamp",
+        "mode": "REQUIRED",
+        "type": "TIMESTAMP"
+    },
+    {
+        "name": "mdr_id",
+        "description": "",
+        "mode": "NULLABLE",
+        "type": "STRING"
+    },
+    {
+        "name": "received_time",
+        "description": "",
+        "mode": "NULLABLE",
+        "type": "INTEGER"
+    },
+    {
+        "name": "msg_hour",
+        "description": "",
+        "mode": "NULLABLE",
+        "type": "INTEGER"
+    },
+    {
+        "name": "msg_minute",
+        "description": "",
+        "mode": "NULLABLE",
+        "type": "INTEGER"
+    },
+    {
+        "name": "msg_second",
+        "description": "",
+        "mode": "NULLABLE",
+        "type": "INTEGER"
+    },
+    {
+        "name": "customer_id",
+        "description": "",
+        "mode": "NULLABLE",
+        "type": "INTEGER"
+    },
+    {
+        "name": "customer_name",
+        "description": "",
+        "mode": "NULLABLE",
+        "type": "STRING"
+    },
+    {
+        "name": "customer_gan",
+        "description": "",
+        "mode": "NULLABLE",
+        "type": "STRING"
+    },
+    {
+        "name": "calling_number",
+        "description": "",
+        "mode": "NULLABLE",
+        "type": "STRING"
+    },
+    {
+        "name": "calling_number_country",
+        "description": "",
+        "mode": "NULLABLE",
+        "type": "STRING"
+    },
+    {
+        "name": "called_number",
+        "description": "",
+        "mode": "NULLABLE",
+        "type": "STRING"
+    },
+    {
+        "name": "called_number_country",
+        "description": "",
+        "mode": "NULLABLE",
+        "type": "STRING"
+    },
+    {
+        "name": "http_status_code",
+        "description": "",
+        "mode": "NULLABLE",
+        "type": "INTEGER"
+    },
+    {
+        "name": "dlr_code",
+        "description": "",
+        "mode": "NULLABLE",
+        "type": "INTEGER"
+    },
+    {
+        "name": "dlr_requested",
+        "description": "",
+        "mode": "NULLABLE",
+        "type": "INTEGER"
+    },
+    {
+        "name": "record_type",
+        "description": "",
+        "mode": "NULLABLE",
+        "type": "INTEGER"
+    },
+    {
+        "name": "message_direction",
+        "description": "",
+        "mode": "NULLABLE",
+        "type": "STRING"
+    },
+    {
+        "name": "message_class",
+        "description": "",
+        "mode": "NULLABLE",
+        "type": "STRING"
+    },
+    {
+        "name": "message_status",
+        "description": "",
+        "mode": "NULLABLE",
+        "type": "STRING"
+    },
+    {
+        "name": "message_parts_total",
+        "description": "",
+        "mode": "NULLABLE",
+        "type": "INTEGER"
+    },
+    {
+        "name": "message_length",
+        "description": "",
+        "mode": "NULLABLE",
+        "type": "INTEGER"
+    },
+    {
+        "name": "multipart_message",
+        "description": "",
+        "mode": "NULLABLE",
+        "type": "INTEGER"
+    },
+    {
+        "name": "billable",
+        "description": "",
+        "mode": "NULLABLE",
+        "type": "INTEGER"
+    },
+    {
+        "name": "zone",
+        "description": "",
+        "mode": "NULLABLE",
+        "type": "STRING"
+    },
+    {
+        "name": "provider_id",
+        "description": "",
+        "mode": "NULLABLE",
+        "type": "INTEGER"
+    },
+    {
+        "name": "provider_name",
+        "description": "",
+        "mode": "NULLABLE",
+        "type": "STRING"
+    },
+    {
+        "name": "product",
+        "description": "",
+        "mode": "NULLABLE",
+        "type": "STRING"
+    },
+    {
+        "name": "amp_name",
+        "description": "",
+        "mode": "NULLABLE",
+        "type": "STRING"
+    },
+    {
+        "name": "billing_scope_id",
+        "description": "",
+        "mode": "NULLABLE",
+        "type": "STRING"
+    },
+    {
+        "name": "insert_timestamp",
+        "description": "",
+        "mode": "NULLABLE",
+        "type": "INTEGER"
+    },
+    {
+        "name": "sent_time",
+        "description": "",
+        "mode": "NULLABLE",
+        "type": "INTEGER"
+    },
+    {
+        "name": "latency_ms",
+        "description": "",
+        "mode": "NULLABLE",
+        "type": "INTEGER"
+    },
+    {
+        "name": "product_zone",
+        "description": "",
+        "mode": "NULLABLE",
+        "type": "STRING"
+    },
+    {
+        "name": "sku",
+        "description": "",
+        "mode": "NULLABLE",
+        "type": "STRING"
+    },
+    {
+        "name": "amp_id",
+        "description": "",
+        "mode": "NULLABLE",
+        "type": "STRING"
+    },
+    {
+        "name": "update_timestamp",
+        "description": "",
+        "mode": "NULLABLE",
+        "type": "INTEGER"
+    },
+    {
+        "name": "api_user_id",
+        "description": "",
+        "mode": "NULLABLE",
+        "type": "STRING"
+    },
+    {
+        "name": "calling_number_state",
+        "description": "",
+        "mode": "NULLABLE",
+        "type": "STRING"
+    },
+    {
+        "name": "called_number_state",
+        "description": "",
+        "mode": "NULLABLE",
+        "type": "STRING"
+    },
+    {
+        "name": "message_date",
+        "description": "",
+        "mode": "NULLABLE",
+        "type": "DATE"
+    }
+]

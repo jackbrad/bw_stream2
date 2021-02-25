@@ -1,0 +1,6 @@
+#create the streaming template for the test harness. 300 messages per second
+gcloud beta dataflow flex-template run stream-fakes-4 --template-file-gcs-location gs://dataflow-templates-us-east1/latest/flex/Streaming_Data_Generator --region us-east1 --parameters schemaLocation=gs://streamer-config/test_stream_config.json,topic=projects/bandwidthstream/topics/Inbound,qps=300
+
+
+#create the stream to BQ from the pubsub topics 
+gcloud dataflow sql query 'SELECT * FROM pubsub.topic.bandwidthstream.Inbound' --job-name streamFromPubSubToBQ --region us-east1 --bigquery-write-disposition write-empty --bigquery-project bandwidthstream --bigquery-dataset Insights --bigquery-table Messages
