@@ -1,10 +1,10 @@
 {
-   "MESSAGE_CLASS": "{{random("good","bad","gooder")}}",	
+   "MESSAGE_CLASS": "{{random("good","bad","gooder")}}",	//no specific type specified. 
     "CALLED_NUMBER_OCN": "{{phone()}}",
     "NUMBER_OF_ATTEMPTS": {{integer(0,20)}},		
     "CALLING_NUMBER_OVERALL_OCN": "{{alphaNumeric(4)}}",			
     "SENT_TIME":{{timestamp()}},	
-    "CUSTOMER_GAN":"",	STRING
+    "CUSTOMER_GAN":"{{lorem(1,"words")}}",	
     "DLR_REQUESTED":{{integer(1,99)}},
     "BILLING_SCOPE_ID":"{{uuid()}}",			
     "MESSAGE_LENGTH":{{integer(1,50)}},		
@@ -18,7 +18,7 @@
     "CALLING_NUMBER_OCN":"{{alphaNumeric(4)}}",			
     "RESPONSE_CODE":{{integer(100,700)}},		
     "DLR_TIME":{{timestamp()}},			
-    "API_USER_ID":"{{uuid()}}",	//could not random.. cardinality is probably to high		
+    "API_USER_ID":"{{uuid()}}",	//could be not random.. cardinality is probably to high		
     "MESSAGE_ID":"{{uuid()}}",		
     "CALLED_NUMBER_STATE":"{{state()}}",			
     "PROVIDER_ID":{{integer(1,15)}},		
@@ -46,7 +46,7 @@
     "RECEIVED_TIME":{{timestamp()}},			
     "CARRIER_SPID":"{{alphaNumeric(10)}}",			
     "DESTS_SPAM_ANALYSIS_RETURN_CODE":"{{integer(0,1)}}",			
-    "FILENAME":"{{concat({lorem(1,"words")},".wav")}}",			
+    "FILENAME":"{{concat(lorem(1,"words"),".wav")}}",			
     "BILLABLE":{{integer(0,1)}},			
     "LOAD_TIME":{{timestamp()}},			
     "AMP_ID":"{{uuid()}}",			
