@@ -1,5 +1,5 @@
 {
-   "MESSAGE_CLASS": "{{random("good","bad","gooder")}}",	
+    "MESSAGE_CLASS": "{{random("good","bad","gooder")}}",	
     "CALLED_NUMBER_OCN": "{{phone()}}",
     "NUMBER_OF_ATTEMPTS": {{integer(0,20)}},		
     "CALLING_NUMBER_OVERALL_OCN": "{{alphaNumeric(4)}}",			
@@ -45,7 +45,7 @@
     "CALLING_NUMBER_COUNTRY":"{{country()}}", 		
     "RECEIVED_TIME":{{timestamp()}},			
     "CARRIER_SPID":"{{alphaNumeric(10)}}",			
-    "DESTS_SPAM_ANALYSIS_RETURN_CODE":"{{integer(0,1)}}",			
+    "DESTS_SPAM_ANALYSIS_RETURN_CODE":{{integer(0,1)}},			
     "FILENAME":"{{concat(lorem(1,"words"),".wav")}}",			
     "BILLABLE":{{integer(0,1)}},			
     "LOAD_TIME":{{timestamp()}},			

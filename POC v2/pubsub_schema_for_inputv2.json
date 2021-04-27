@@ -33,7 +33,7 @@
         "name": "SENT_TIME",
         "description": "",
         "mode": "REQUIRED",
-        "type": "TIMESTAMP"
+        "type": "INT64"
     },
     {
         "name": "CUSTOMER_GAN",
@@ -117,7 +117,7 @@
         "name": "DLR_TIME",
         "description": "",
         "mode": "REQUIRED",
-        "type": "TIMESTAMP"
+        "type": "INT64"
     },
     {
         "name": "API_USER_ID",
@@ -147,7 +147,7 @@
         "name": "CAMPAIGN_ID",
         "description": "",
         "mode": "REQUIRED",
-        "type": "String"
+        "type": "INT64"
     },
     {
         "name": "ZONE",
@@ -249,7 +249,7 @@
         "name": "FINAL_TIME",
         "description": "",
         "mode": "REQUIRED",
-        "type": "TIMESTAMP"
+        "type": "INT64"
     },
     {
         "name": "CALLED_NUMBER",
@@ -273,7 +273,7 @@
         "name": "RECEIVED_TIME",
         "description": "",
         "mode": "REQUIRED",
-        "type": "TIMESTAMP"
+        "type": "INT64"
     },
     {
         "name": "CARRIER_SPID",
@@ -303,7 +303,7 @@
         "name": "LOAD_TIME",
         "description": "",
         "mode": "REQUIRED",
-        "type": "TIMESTAMP"
+        "type": "INT64"
     },
     {
         "name": "AMP_ID",
