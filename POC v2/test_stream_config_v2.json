@@ -53,5 +53,5 @@
     "AMP_NAME":"{{random("red","yellow","green")}}",			
     "CALLING_NUMBER_AOCN":"{{alphaNumeric(4)}}",			
     "CALLED_NUMBER_AOCN":"{{alphaNumeric(4)}}",		
-    "MESSAGE_DATE":"{{date("YYYY-MM-dd")}}"
+    "MESSAGE_DATE":"{{date("YYYY-MM-dd")}}" 
 }
