@@ -1,5 +1,5 @@
 {
-   "MESSAGE_CLASS": "{{random("good","bad","gooder")}}",	//no specific type specified. 
+   "MESSAGE_CLASS": "{{random("good","bad","gooder")}}",	
     "CALLED_NUMBER_OCN": "{{phone()}}",
     "NUMBER_OF_ATTEMPTS": {{integer(0,20)}},		
     "CALLING_NUMBER_OVERALL_OCN": "{{alphaNumeric(4)}}",			
@@ -11,20 +11,20 @@
     "CALLING_NUMBER":"{{phone()}}",			
     "PROVIDER_NAME":"{{random("verizon","google","att")}}",			
     "CARRIER_NET_NUMBER_ID":"{{alphaNumeric(4)}}",			
-    "DESTINATION_COUNTRY_CODE":"{{country()}}",	//not a short string		
+    "DESTINATION_COUNTRY_CODE":"{{country()}}",			
     "MDR_ID":"{{uuid()}}",			
-    "CALLED_NUMBER_LATA": "{{concat("",{integer(100,999)}}",			
+    "CALLED_NUMBER_LATA": "{{integer(100,999)}}",			
     "MESSAGE_STATUS":"{{random("good","better","best","bester")}}",			
     "CALLING_NUMBER_OCN":"{{alphaNumeric(4)}}",			
     "RESPONSE_CODE":{{integer(100,700)}},		
     "DLR_TIME":{{timestamp()}},			
-    "API_USER_ID":"{{uuid()}}",	//could be not random.. cardinality is probably to high		
+    "API_USER_ID":"{{uuid()}}",	
     "MESSAGE_ID":"{{uuid()}}",		
     "CALLED_NUMBER_STATE":"{{state()}}",			
     "PROVIDER_ID":{{integer(1,15)}},		
     "CAMPAIGN_ID":{{integer(1,100)}},		
-    "ZONE":"{{random("us","eu","sa","as")}}", //not a specific zone AKA. this is a short country list
-    "CUSTOMER_NAME":"{{firstName()}} {{lastName()}}",	//Should this be a human name?		
+    "ZONE":"{{random("us","eu","sa","as")}}", 
+    "CUSTOMER_NAME":"{{firstName()}} {{lastName()}}",	
     "HTTP_STATUS_CODE":{{integer(100,600)}},		
     "CALLED_NUMBER_COUNTRY":"{{country()}}",			
     "MESSAGE_PARTS_TOTAL":{{integer(1,5)}},			
