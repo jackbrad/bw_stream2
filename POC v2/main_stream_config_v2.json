@@ -38,7 +38,7 @@
     "PRODUCT":"{{random("b1","b2","b2","b4")}}",		
     "CALLING_NUMBER_STATE":"{{state()}}",			
     "SOURCES_SPAM_ANALYSIS_RETURN_CODE":{{integer(0,1)}},			
-    "CUSTOMER_ID":"{{integer(0,100)}}",			
+    "CUSTOMER_ID":"{{integer(10,100)}}",			
     "FINAL_TIME":{{timestamp()}},			
     "CALLED_NUMBER":"{{phone()}}",			
     "MESSAGE_PART":{{integer(1,5)}},			
