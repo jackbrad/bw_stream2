@@ -1,0 +1,338 @@
+[
+    {
+        "name": "event_timestamp",
+        "description": "Pub/Sub event timestamp",
+        "mode": "REQUIRED",
+        "type": "TIMESTAMP"
+    },
+    {
+        "name": "MESSAGE_CLASS",
+        "description": "",
+        "mode": "REQUIRED",
+        "type": "String"
+    },
+    {
+        "name": "CALLED_NUMBER_OCN",
+        "description": "",
+        "mode": "REQUIRED",
+        "type": "String"
+    },
+    {
+        "name": "NUMBER_OF_ATTEMPTS",
+        "description": "",
+        "mode": "REQUIRED",
+        "type": "INT64"
+    },
+    {
+        "name": "CALLING_NUMBER_OVERALL_OCN",
+        "description": "",
+        "mode": "REQUIRED",
+        "type": "String"
+    },
+    {
+        "name": "SENT_TIME",
+        "description": "",
+        "mode": "REQUIRED",
+        "type": "TIMESTAMP"
+    },
+    {
+        "name": "CUSTOMER_GAN",
+        "description": "",
+        "mode": "REQUIRED",
+        "type": "String"
+    },
+    {
+        "name": "DLR_REQUESTED",
+        "description": "",
+        "mode": "REQUIRED",
+        "type": "INT64"
+    },
+    {
+        "name": "BILLING_SCOPE_ID",
+        "description": "",
+        "mode": "REQUIRED",
+        "type": "String"
+    },
+    {
+        "name": "MESSAGE_LENGTH",
+        "description": "",
+        "mode": "REQUIRED",
+        "type": "INT64"
+    },
+    {
+        "name": "CALLING_NUMBER",
+        "description": "",
+        "mode": "REQUIRED",
+        "type": "String"
+    },
+    {
+        "name": "PROVIDER_NAME",
+        "description": "",
+        "mode": "REQUIRED",
+        "type": "String"
+    },
+    {
+        "name": "CARRIER_NET_NUMBER_ID",
+        "description": "",
+        "mode": "REQUIRED",
+        "type": "String"
+    },
+    {
+        "name": "DESTINATION_COUNTRY_CODE",
+        "description": "",
+        "mode": "REQUIRED",
+        "type": "String"
+    },
+    {
+        "name": "MDR_ID",
+        "description": "",
+        "mode": "REQUIRED",
+        "type": "String"
+    },
+    {
+        "name": "CALLED_NUMBER_LATA",
+        "description": "",
+        "mode": "REQUIRED",
+        "type": "String"
+    }, 
+    {
+        "name": "MESSAGE_STATUS",
+        "description": "",
+        "mode": "REQUIRED",
+        "type": "String"
+    },
+    {
+        "name": "CALLING_NUMBER_OCN",
+        "description": "",
+        "mode": "REQUIRED",
+        "type": "String"
+    },
+    {
+        "name": "RESPONSE_CODE",
+        "description": "",
+        "mode": "REQUIRED",
+        "type": "INT64"
+    },
+    {
+        "name": "DLR_TIME",
+        "description": "",
+        "mode": "REQUIRED",
+        "type": "TIMESTAMP"
+    },
+    {
+        "name": "API_USER_ID",
+        "description": "",
+        "mode": "REQUIRED",
+        "type": "String"
+    },
+    {
+        "name": "MESSAGE_ID",
+        "description": "",
+        "mode": "REQUIRED",
+        "type": "String"
+    },
+    {
+        "name": "CALLED_NUMBER_STATE",
+        "description": "",
+        "mode": "REQUIRED",
+        "type": "String"
+    },
+    {
+        "name": "PROVIDER_ID",
+        "description": "",
+        "mode": "REQUIRED",
+        "type": "INT64"
+    },
+    {
+        "name": "CAMPAIGN_ID",
+        "description": "",
+        "mode": "REQUIRED",
+        "type": "String"
+    },
+    {
+        "name": "ZONE",
+        "description": "",
+        "mode": "REQUIRED",
+        "type": "String"
+    },
+    {
+        "name": "CUSTOMER_NAME",
+        "description": "",
+        "mode": "REQUIRED",
+        "type": "String"
+    },
+    {
+        "name": "HTTP_STATUS_CODE",
+        "description": "",
+        "mode": "REQUIRED",
+        "type": "INT64"
+    },
+    {
+        "name": "CALLED_NUMBER_COUNTRY",
+        "description": "",
+        "mode": "REQUIRED",
+        "type": "String"
+    },
+    {
+        "name": "MESSAGE_PARTS_TOTAL",
+        "description": "",
+        "mode": "REQUIRED",
+        "type": "INT64"
+    },
+    {
+        "name": "CALLING_NUMBER_LATA",
+        "description": "",
+        "mode": "REQUIRED",
+        "type": "String"
+    },
+    {
+        "name": "RECORD_TYPE",
+        "description": "",
+        "mode": "REQUIRED",
+        "type": "String"
+    },
+    {
+        "name": "CORRELATOR_CORRELATED_DATE",
+        "description": "",
+        "mode": "REQUIRED",
+        "type": "String"
+    },
+    {
+        "name": "DLR_CODE",
+        "description": "",
+        "mode": "REQUIRED",
+        "type": "INT64"
+    },
+    {
+        "name": "API_APP_ID",
+        "description": "",
+        "mode": "REQUIRED",
+        "type": "String"
+    },
+    {
+        "name": "MESSAGE_DIRECTION",
+        "description": "",
+        "mode": "REQUIRED",
+        "type": "String"
+    },
+    {
+        "name": "CALLED_NUMBER_OVERALL_OCN",
+        "description": "",
+        "mode": "REQUIRED",
+        "type": "String"
+    },
+    {
+        "name": "PRODUCT",
+        "description": "",
+        "mode": "REQUIRED",
+        "type": "String"
+    },
+    {
+        "name": "CALLING_NUMBER_STATE",
+        "description": "",
+        "mode": "REQUIRED",
+        "type": "String"
+    },
+    {
+        "name": "SOURCES_SPAM_ANALYSIS_RETURN_CODE",
+        "description": "",
+        "mode": "REQUIRED",
+        "type": "INT64"
+    },
+    {
+        "name": "CUSTOMER_ID",
+        "description": "",
+        "mode": "REQUIRED",
+        "type": "String"
+    },
+    {
+        "name": "FINAL_TIME",
+        "description": "",
+        "mode": "REQUIRED",
+        "type": "TIMESTAMP"
+    },
+    {
+        "name": "CALLED_NUMBER",
+        "description": "",
+        "mode": "REQUIRED",
+        "type": "String"
+    },
+    {
+        "name": "MESSAGE_PART",
+        "description": "",
+        "mode": "REQUIRED",
+        "type": "INT64"
+    },
+    {
+        "name": "CALLING_NUMBER_COUNTRY",
+        "description": "",
+        "mode": "REQUIRED",
+        "type": "String"
+    },
+    {
+        "name": "RECEIVED_TIME",
+        "description": "",
+        "mode": "REQUIRED",
+        "type": "TIMESTAMP"
+    },
+    {
+        "name": "CARRIER_SPID",
+        "description": "",
+        "mode": "REQUIRED",
+        "type": "String"
+    },
+    {
+        "name": "DESTS_SPAM_ANALYSIS_RETURN_CODE",
+        "description": "",
+        "mode": "REQUIRED",
+        "type": "INT64"
+    },
+    {
+        "name": "FILENAME",
+        "description": "",
+        "mode": "REQUIRED",
+        "type": "String"
+    },
+    {
+        "name": "BILLABLE",
+        "description": "",
+        "mode": "REQUIRED",
+        "type": "INT64"
+    },
+    {
+        "name": "LOAD_TIME",
+        "description": "",
+        "mode": "REQUIRED",
+        "type": "TIMESTAMP"
+    },
+    {
+        "name": "AMP_ID",
+        "description": "",
+        "mode": "REQUIRED",
+        "type": "String"
+    },
+    {
+        "name": "AMP_NAME",
+        "description": "",
+        "mode": "REQUIRED",
+        "type": "String"
+    },
+    {
+        "name": "CALLING_NUMBER_AOCN",
+        "description": "",
+        "mode": "REQUIRED",
+        "type": "String"
+    },
+    {
+        "name": "CALLED_NUMBER_AOCN",
+        "description": "",
+        "mode": "REQUIRED",
+        "type": "String"
+    },
+    {
+        "name": "MESSAGE_DATE",
+        "description": "",
+        "mode": "NULLABLE",
+        "type": "DATE"
+    }
+]
