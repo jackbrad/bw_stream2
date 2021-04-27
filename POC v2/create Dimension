@@ -1,0 +1,28 @@
+create or replace TABLE bandwidthstream.insightsV2.MDR_AMP_NAME (
+DIMENSION_KEY String,
+DIMENSION_VALUE String
+);
+create or replace TABLE bandwidthstream.insightsV2.MDR_DLR_CODE (
+DIMENSION_KEY String,
+DIMENSION_VALUE String
+);
+create or replace TABLE bandwidthstream.insightsV2.MDR_MESSAGE_DIRECTION (
+DIMENSION_KEY String,
+DIMENSION_VALUE String
+);
+create or replace TABLE bandwidthstream.insightsV2.MDR_MESSAGE_STATUS (
+DIMENSION_KEY String,
+DIMENSION_VALUE String
+);
+create or replace TABLE bandwidthstream.insightsV2.MDR_PRODUCT (
+DIMENSION_KEY String,
+DIMENSION_VALUE String
+);
+create or replace TABLE bandwidthstream.insightsV2.MDR_RECORD_TYPE (
+DIMENSION_KEY String,
+DIMENSION_VALUE String
+);
+create or replace TABLE bandwidthstream.insightsV2.MDR_CUSTOMER (
+DIMENSION_KEY String,
+DIMENSION_VALUE String
+);
