@@ -24,7 +24,7 @@
     "PROVIDER_ID":{{integer(1,15)}},		
     "CAMPAIGN_ID":"{{integer(1,100)}}",		
     "ZONE":"{{random("us","eu","sa","as")}}", 
-    "CUSTOMER_NAME":"{{{put("customer", integer(30000,31500))}} {{get("customer")}}",	
+    "CUSTOMER_NAME":"{{put("customer", integer(30000,31500))}} {{get("customer")}}",	
     "HTTP_STATUS_CODE":{{integer(100,600)}},		
     "CALLED_NUMBER_COUNTRY":"{{integer(200,216)}}",			
     "MESSAGE_PARTS_TOTAL":{{integer(1,5)}},			
