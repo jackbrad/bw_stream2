@@ -1,2 +1,0 @@
-#command to create main test message Streaming_Data_Generator
-gcloud beta dataflow flex-template run main-v2-stream-fakes --template-file-gcs-location gs://dataflow-templates-us-central1/latest/flex/Streaming_Data_Generator --region us-central1 --parameters schemaLocation=gs://streamer-config/top_customer_stream_config_v2.json,topic=projects/bandwidthstream/topics/InboundV2,qps=270
