@@ -33,6 +33,9 @@ bq mk --table InsightsV2a.MDR_MESSAGE_STATUS MDR_MESSAGE_STATUS.json
 bq mk --table InsightsV2a.MDR_PRODUCT MDR_PRODUCT.json
 bq mk --table InsightsV2a.MDR_RECORD_TYPE MDR_RECORD_TYPE.json
 
+#insert data in the dimension tables
+
+
 #create incoming message queue in pub/sub
 gcloud pubsub topics create IncomingV2
 gcloud pubsub subscriptions create IncomingV2-Sub --topic=IncomingV2 
@@ -42,5 +45,9 @@ gcloud beta dataflow flex-template run top_customer-v2-stream-fakes --template-f
 #command to create main test messages Streaming_Data_Generator
 gcloud beta dataflow flex-template run main-v2-stream-fakes --template-file-gcs-location gs://dataflow-templates-us-central1/latest/flex/Streaming_Data_Generator --region us-central1 --parameters schemaLocation=gs://$storage_configname/main_stream_config_v2.json,topic=projects/$project_name/topics/InboundV2,qps=30
 
+#add the schema to the pub/subtopic in BQ's dataflow SQL editor
+gcloud beta data-catalog entries update lookup-entry='pubsub.topic.`$project_name`.`IncomingV2`' --schema-from-file=pubsub_schema_for_inputv2.json
+
 #command to create BQ stream to Raw holding loacation
 gcloud dataflow sql query 'SELECT * FROM pubsub.topic.$project_name.InboundV2' --job-name dfsql-incomingv2-bq-a --region us-central1 --bigquery-write-disposition write-append --bigquery-project $project_name --bigquery-dataset InsightsV2a --bigquery-table CORRELATED_MDR_LONG_TERM
+

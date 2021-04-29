@@ -1,0 +1,226 @@
+[
+  {
+    "name": "event_timestamp",
+    "type": "TIMESTAMP"
+  },
+  {
+    "name": "MESSAGE_CLASS",
+    "type": "STRING"
+  },
+  {
+    "name": "CALLED_NUMBER_OCN",
+    "type": "STRING"
+  },
+  {
+    "name": "NUMBER_OF_ATTEMPTS",
+    "type": "NUMERIC"
+  },
+  {
+    "name": "CALLING_NUMBER_OVERALL_OCN",
+    "type": "STRING"
+  },
+  {
+    "name": "SENT_TIME",
+    "type": "TIMESTAMP"
+  },
+  {
+    "name": "CUSTOMER_GAN",
+    "type": "STRING"
+  },
+  {
+    "name": "DLR_REQUESTED",
+    "type": "NUMERIC"
+  },
+  {
+    "name": "BILLING_SCOPE_ID",
+    "type": "STRING"
+  },
+  {
+    "name": "MESSAGE_LENGTH",
+    "type": "NUMERIC"
+  },
+  {
+    "name": "CALLING_NUMBER",
+    "type": "STRING"
+  },
+  {
+    "name": "PROVIDER_NAME",
+    "type": "STRING"
+  },
+  {
+    "name": "CARRIER_NET_NUMBER_ID",
+    "type": "STRING"
+  },
+  {
+    "name": "DESTINATION_COUNTRY_CODE",
+    "type": "STRING"
+  },
+  {
+    "name": "MDR_ID",
+    "type": "STRING"
+  },
+  {
+    "name": "CALLED_NUMBER_LATA",
+    "type": "STRING"
+  },
+  {
+    "name": "MESSAGE_STATUS",
+    "type": "STRING"
+  },
+  {
+    "name": "CALLING_NUMBER_OCN",
+    "type": "STRING"
+  },
+  {
+    "name": "RESPONSE_CODE",
+    "type": "NUMERIC"
+  },
+  {
+    "name": "DLR_TIME",
+    "type": "TIMESTAMP"
+  },
+  {
+    "name": "API_USER_ID",
+    "type": "STRING"
+  },
+  {
+    "name": "MESSAGE_ID",
+    "type": "STRING"
+  },
+  {
+    "name": "CALLED_NUMBER_STATE",
+    "type": "STRING"
+  },
+  {
+    "name": "PROVIDER_ID",
+    "type": "NUMERIC"
+  },
+  {
+    "name": "CAMPAIGN_ID",
+    "type": "STRING"
+  },
+  {
+    "name": "ZONE",
+    "type": "STRING"
+  },
+  {
+    "name": "CUSTOMER_NAME",
+    "type": "STRING"
+  },
+  {
+    "name": "HTTP_STATUS_CODE",
+    "type": "NUMERIC"
+  },
+  {
+    "name": "CALLED_NUMBER_COUNTRY",
+    "type": "STRING"
+  },
+  {
+    "name": "MESSAGE_PARTS_TOTAL",
+    "type": "NUMERIC"
+  },
+  {
+    "name": "CALLING_NUMBER_LATA",
+    "type": "STRING"
+  },
+  {
+    "name": "RECORD_TYPE",
+    "type": "STRING"
+  },
+  {
+    "name": "CORRELATOR_CORRELATED_DATE",
+    "type": "STRING"
+  },
+  {
+    "name": "DLR_CODE",
+    "type": "NUMERIC"
+  },
+  {
+    "name": "API_APP_ID",
+    "type": "STRING"
+  },
+  {
+    "name": "MESSAGE_DIRECTION",
+    "type": "STRING"
+  },
+  {
+    "name": "CALLED_NUMBER_OVERALL_OCN",
+    "type": "STRING"
+  },
+  {
+    "name": "PRODUCT",
+    "type": "STRING"
+  },
+  {
+    "name": "CALLING_NUMBER_STATE",
+    "type": "STRING"
+  },
+  {
+    "name": "SOURCES_SPAM_ANALYSIS_RETURN_CODE",
+    "type": "NUMERIC"
+  },
+  {
+    "name": "CUSTOMER_ID",
+    "type": "STRING"
+  },
+  {
+    "name": "FINAL_TIME",
+    "type": "TIMESTAMP"
+  },
+  {
+    "name": "CALLED_NUMBER",
+    "type": "STRING"
+  },
+  {
+    "name": "MESSAGE_PART",
+    "type": "NUMERIC"
+  },
+  {
+    "name": "CALLING_NUMBER_COUNTRY",
+    "type": "STRING"
+  },
+  {
+    "name": "RECEIVED_TIME",
+    "type": "TIMESTAMP"
+  },
+  {
+    "name": "CARRIER_SPID",
+    "type": "STRING"
+  },
+  {
+    "name": "DESTS_SPAM_ANALYSIS_RETURN_CODE",
+    "type": "NUMERIC"
+  },
+  {
+    "name": "FILENAME",
+    "type": "STRING"
+  },
+  {
+    "name": "BILLABLE",
+    "type": "NUMERIC"
+  },
+  {
+    "name": "LOAD_TIME",
+    "type": "TIMESTAMP"
+  },
+  {
+    "name": "AMP_ID",
+    "type": "STRING"
+  },
+  {
+    "name": "AMP_NAME",
+    "type": "STRING"
+  },
+  {
+    "name": "CALLING_NUMBER_AOCN",
+    "type": "STRING"
+  },
+  {
+    "name": "CALLED_NUMBER_AOCN",
+    "type": "STRING"
+  },
+  {
+    "name": "MESSAGE_DATE",
+    "type": "DATE"
+  }
+]

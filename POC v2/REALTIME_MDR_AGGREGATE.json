@@ -1,0 +1,86 @@
+[
+  {
+    "name": "CUSTOMER_ID",
+    "type": "STRING"
+  },
+  {
+    "name": "MESSAGE_STATUS",
+    "type": "STRING"
+  },
+  {
+    "name": "RECORD_TYPE",
+    "type": "STRING"
+  },
+  {
+    "name": "DLR_CODE",
+    "type": "STRING"
+  },
+  {
+    "name": "PRODUCT",
+    "type": "STRING"
+  },
+  {
+    "name": "MESSAGE_DIRECTION",
+    "type": "STRING"
+  },
+  {
+    "name": "MESSAGE_COUNT",
+    "type": "NUMERIC"
+  },
+  {
+    "name": "MESSAGE_DATE",
+    "type": "DATE"
+  },
+  {
+    "name": "MESSAGE_HOUR",
+    "type": "NUMERIC"
+  },
+  {
+    "name": "MESSAGE_MINUTE",
+    "type": "NUMERIC"
+  },
+  {
+    "name": "MESSAGE_DATE_HR_MIN",
+    "type": "TIMESTAMP"
+  },
+  {
+    "name": "CALLING_NUMERIC",
+    "type": "STRING"
+  },
+  {
+    "name": "AMP_NAME",
+    "type": "STRING"
+  },
+  {
+    "name": "PROVIDER_NAME",
+    "type": "STRING"
+  },
+  {
+    "name": "CALLED_NUMERIC_COUNTRY",
+    "type": "STRING"
+  },
+  {
+    "name": "SOURCE_INSERT_TIMESTAMP",
+    "type": "TIMESTAMP"
+  },
+  {
+    "name": "INSERT_TIMESTAMP",
+    "type": "TIMESTAMP"
+  },
+  {
+    "name": "UPDATE_TIMESTAMP",
+    "type": "TIMESTAMP"
+  },
+  {
+    "name": "CUSTOMER_NAME",
+    "type": "STRING"
+  },
+  {
+    "name": "CALLED_NUMERIC_STATE",
+    "type": "STRING"
+  },
+  {
+    "name": "BILLABLE",
+    "type": "NUMERIC"
+  }
+]

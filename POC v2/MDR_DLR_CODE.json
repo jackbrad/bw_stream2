@@ -1,0 +1,10 @@
+[
+  {
+    "name": "DIMENSION_KEY",
+    "type": "STRING"
+  },
+  {
+    "name": "DIMENSION_VALUE",
+    "type": "STRING"
+  }
+]
