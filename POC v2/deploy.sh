@@ -32,7 +32,7 @@ bq mk --table InsightsV2a.MDR_MESSAGE_STATUS schema/MDR_MESSAGE_STATUS.json
 bq mk --table InsightsV2a.MDR_PRODUCT schema/MDR_PRODUCT.json
 bq mk --table InsightsV2a.MDR_RECORD_TYPE schema/MDR_RECORD_TYPE.json
 #Create views... 
-#### Not Done000
+#### Not Done
 
 
 #insert data in the dimension tables
@@ -44,10 +44,10 @@ gcloud pubsub topics create IncomingV2
 gcloud pubsub subscriptions create IncomingV2-Sub --topic=IncomingV2 
 
 #command to create top customer test messages Streaming_Data_Generator
-gcloud beta dataflow flex-template run top_customer-v2-stream-fakes --template-file-gcs-location gs://dataflow-templates-us-central1/latest/flex/Streaming_Data_Generator --region us-central1 --parameters schemaLocation=gs://$storage_configname/top_customer_stream_config_v2.json,topic=projects/$project_name/topics/InboundV2,qps=270
+gcloud beta dataflow flex-template run top_customer-v2-stream-fakes --template-file-gcs-location gs://dataflow-templates-us-central1/latest/flex/Streaming_Data_Generator --region us-central1 --parameters schemaLocation=gs://${storage_configname}/top_customer_stream_config_v2.json,topic=projects/${project_name}/topics/InboundV2,qps=270
 
 #command to create main test messages Streaming_Data_Generator
-gcloud beta dataflow flex-template run main-v2-stream-fakes --template-file-gcs-location gs://dataflow-templates-us-central1/latest/flex/Streaming_Data_Generator --region us-central1 --parameters schemaLocation=gs://$storage_configname/main_stream_config_v2.json,topic=projects/$project_name/topics/InboundV2,qps=30
+gcloud beta dataflow flex-template run main-v2-stream-fakes --template-file-gcs-location gs://dataflow-templates-us-central1/latest/flex/Streaming_Data_Generator --region us-central1 --parameters schemaLocation=gs://${storage_configname}/main_stream_config_v2.json,topic=projects/${project_name}/topics/InboundV2,qps=30
 
 #add the schema to the pub/subtopic in BQ's dataflow SQL editor
 gcloud beta data-catalog entries update --lookup-entry="pubsub.topic.${project_name}.IncomingV2_topic" --schema-from-file=pubsub_schema_for_inputv2.json
