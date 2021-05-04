@@ -55,10 +55,9 @@ gcloud beta dataflow flex-template run stream-fakes-top-customers \
 
 
 #add the schema to the pub/subtopic in BQ's dataflow SQL editor
-entrylocation=pubsub.topic.${project_name}.IncomingV2
-echo "Data Catalog Schema Location: ${entrylocation}"
-
-gcloud beta data-catalog entries update --lookup-entry="${entrylocation}" --schema-from-file=pubsub_schema_for_inputv2.json
+gcloud beta data-catalog entries update \
+ --lookup-entry="pubsub.topic.${project_name}.IncomingV2" \
+ --schema-from-file=pubsub_schema_for_inputv2.json
 
 #command to create BQ stream to Raw holding loacation
 gcloud dataflow sql query 'SELECT * FROM pubsub.topic.$project_name.InboundV2' --job-name dfsql-incomingv2-bq-a --region us-central1 --bigquery-write-disposition write-append --bigquery-project $project_name --bigquery-dataset InsightsV2a --bigquery-table CORRELATED_MDR_LONG_TERM
