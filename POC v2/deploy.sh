@@ -13,7 +13,8 @@ gcloud services enable datacatalog.googleapis.com
 sudo apt install uuid-runtime
 
 #create cloud storage bucket
-storage_configname=$(uuidgen)
+storage_configname=a${(uuidgen)}
+
 gsutil mb gs://$storage_configname
 
 #upload the test_harnes config
