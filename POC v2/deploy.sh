@@ -60,7 +60,7 @@ gcloud beta data-catalog entries update \
  --schema-from-file=pubsub_schema_for_inputv2.json 
 
 
-#command to create BQ stream to Raw holding loacation
+#command to create BQ stream to Raw holding loacation for incoming messages
 gcloud dataflow sql query "SELECT * FROM pubsub.topic.${project_name}.IncomingV2" --job-name dfsql-incomingv2-bq-a --region us-central1 --bigquery-write-disposition write-append --bigquery-project $project_name --bigquery-dataset InsightsV2a --bigquery-table CORRELATED_MDR_LONG_TERM
 
 
