@@ -1,336 +1,336 @@
 [
     {
-        "name": "event_timestamp",
+        "column": "event_timestamp",
         "description": "Pub/Sub event timestamp",
         "mode": "REQUIRED",
         "type": "TIMESTAMP"
     },
     {
-        "name": "MESSAGE_CLASS",
+        "column": "MESSAGE_CLASS",
         "description": "",
         "mode": "REQUIRED",
-        "type": "String"
+        "type": "STRING"
     },
     {
-        "name": "CALLED_NUMBER_OCN",
+        "column": "CALLED_NUMBER_OCN",
         "description": "",
         "mode": "REQUIRED",
-        "type": "String"
+        "type": "STRING"
     },
     {
-        "name": "NUMBER_OF_ATTEMPTS",
+        "column": "NUMBER_OF_ATTEMPTS",
         "description": "",
         "mode": "REQUIRED",
         "type": "INT64"
     },
     {
-        "name": "CALLING_NUMBER_OVERALL_OCN",
+        "column": "CALLING_NUMBER_OVERALL_OCN",
         "description": "",
         "mode": "REQUIRED",
-        "type": "String"
+        "type": "STRING"
     },
     {
-        "name": "SENT_TIME",
+        "column": "SENT_TIME",
         "description": "",
         "mode": "REQUIRED",
-        "type": "String"
+        "type": "STRING"
     },
     {
-        "name": "CUSTOMER_GAN",
+        "column": "CUSTOMER_GAN",
         "description": "",
         "mode": "REQUIRED",
-        "type": "String"
+        "type": "STRING"
     },
     {
-        "name": "DLR_REQUESTED",
+        "column": "DLR_REQUESTED",
         "description": "",
         "mode": "REQUIRED",
         "type": "INT64"
     },
     {
-        "name": "BILLING_SCOPE_ID",
+        "column": "BILLING_SCOPE_ID",
         "description": "",
         "mode": "REQUIRED",
-        "type": "String"
+        "type": "STRING"
     },
     {
-        "name": "MESSAGE_LENGTH",
+        "column": "MESSAGE_LENGTH",
         "description": "",
         "mode": "REQUIRED",
         "type": "INT64"
     },
     {
-        "name": "CALLING_NUMBER",
+        "column": "CALLING_NUMBER",
         "description": "",
         "mode": "REQUIRED",
-        "type": "String"
+        "type": "STRING"
     },
     {
-        "name": "PROVIDER_NAME",
+        "column": "PROVIDER_NAME",
         "description": "",
         "mode": "REQUIRED",
-        "type": "String"
+        "type": "STRING"
     },
     {
-        "name": "CARRIER_NET_NUMBER_ID",
+        "column": "CARRIER_NET_NUMBER_ID",
         "description": "",
         "mode": "REQUIRED",
-        "type": "String"
+        "type": "STRING"
     },
     {
-        "name": "DESTINATION_COUNTRY_CODE",
+        "column": "DESTINATION_COUNTRY_CODE",
         "description": "",
         "mode": "REQUIRED",
-        "type": "String"
+        "type": "STRING"
     },
     {
-        "name": "MDR_ID",
+        "column": "MDR_ID",
         "description": "",
         "mode": "REQUIRED",
-        "type": "String"
+        "type": "STRING"
     },
     {
-        "name": "CALLED_NUMBER_LATA",
+        "column": "CALLED_NUMBER_LATA",
         "description": "",
         "mode": "REQUIRED",
-        "type": "String"
+        "type": "STRING"
     }, 
     {
-        "name": "MESSAGE_STATUS",
+        "column": "MESSAGE_STATUS",
         "description": "",
         "mode": "REQUIRED",
-        "type": "String"
+        "type": "STRING"
     },
     {
-        "name": "CALLING_NUMBER_OCN",
+        "column": "CALLING_NUMBER_OCN",
         "description": "",
         "mode": "REQUIRED",
-        "type": "String"
+        "type": "STRING"
     },
     {
-        "name": "RESPONSE_CODE",
-        "description": "",
-        "mode": "REQUIRED",
-        "type": "INT64"
-    },
-    {
-        "name": "DLR_TIME",
-        "description": "",
-        "mode": "REQUIRED",
-        "type": "String"
-    },
-    {
-        "name": "API_USER_ID",
-        "description": "",
-        "mode": "REQUIRED",
-        "type": "String"
-    },
-    {
-        "name": "MESSAGE_ID",
-        "description": "",
-        "mode": "REQUIRED",
-        "type": "String"
-    },
-    {
-        "name": "CALLED_NUMBER_STATE",
-        "description": "",
-        "mode": "REQUIRED",
-        "type": "String"
-    },
-    {
-        "name": "PROVIDER_ID",
+        "column": "RESPONSE_CODE",
         "description": "",
         "mode": "REQUIRED",
         "type": "INT64"
     },
     {
-        "name": "CAMPAIGN_ID",
+        "column": "DLR_TIME",
+        "description": "",
+        "mode": "REQUIRED",
+        "type": "STRING"
+    },
+    {
+        "column": "API_USER_ID",
+        "description": "",
+        "mode": "REQUIRED",
+        "type": "STRING"
+    },
+    {
+        "column": "MESSAGE_ID",
+        "description": "",
+        "mode": "REQUIRED",
+        "type": "STRING"
+    },
+    {
+        "column": "CALLED_NUMBER_STATE",
+        "description": "",
+        "mode": "REQUIRED",
+        "type": "STRING"
+    },
+    {
+        "column": "PROVIDER_ID",
         "description": "",
         "mode": "REQUIRED",
         "type": "INT64"
     },
     {
-        "name": "ZONE",
-        "description": "",
-        "mode": "REQUIRED",
-        "type": "String"
-    },
-    {
-        "name": "CUSTOMER_NAME",
-        "description": "",
-        "mode": "REQUIRED",
-        "type": "String"
-    },
-    {
-        "name": "HTTP_STATUS_CODE",
+        "column": "CAMPAIGN_ID",
         "description": "",
         "mode": "REQUIRED",
         "type": "INT64"
     },
     {
-        "name": "CALLED_NUMBER_COUNTRY",
+        "column": "ZONE",
         "description": "",
         "mode": "REQUIRED",
-        "type": "String"
+        "type": "STRING"
     },
     {
-        "name": "MESSAGE_PARTS_TOTAL",
+        "column": "CUSTOMER_NAME",
         "description": "",
         "mode": "REQUIRED",
-        "type": "INT64"
+        "type": "STRING"
     },
     {
-        "name": "CALLING_NUMBER_LATA",
-        "description": "",
-        "mode": "REQUIRED",
-        "type": "String"
-    },
-    {
-        "name": "RECORD_TYPE",
-        "description": "",
-        "mode": "REQUIRED",
-        "type": "String"
-    },
-    {
-        "name": "CORRELATOR_CORRELATED_DATE",
-        "description": "",
-        "mode": "REQUIRED",
-        "type": "String"
-    },
-    {
-        "name": "DLR_CODE",
+        "column": "HTTP_STATUS_CODE",
         "description": "",
         "mode": "REQUIRED",
         "type": "INT64"
     },
     {
-        "name": "API_APP_ID",
+        "column": "CALLED_NUMBER_COUNTRY",
         "description": "",
         "mode": "REQUIRED",
-        "type": "String"
+        "type": "STRING"
     },
     {
-        "name": "MESSAGE_DIRECTION",
-        "description": "",
-        "mode": "REQUIRED",
-        "type": "String"
-    },
-    {
-        "name": "CALLED_NUMBER_OVERALL_OCN",
-        "description": "",
-        "mode": "REQUIRED",
-        "type": "String"
-    },
-    {
-        "name": "PRODUCT",
-        "description": "",
-        "mode": "REQUIRED",
-        "type": "String"
-    },
-    {
-        "name": "CALLING_NUMBER_STATE",
-        "description": "",
-        "mode": "REQUIRED",
-        "type": "String"
-    },
-    {
-        "name": "SOURCES_SPAM_ANALYSIS_RETURN_CODE",
+        "column": "MESSAGE_PARTS_TOTAL",
         "description": "",
         "mode": "REQUIRED",
         "type": "INT64"
     },
     {
-        "name": "CUSTOMER_ID",
+        "column": "CALLING_NUMBER_LATA",
         "description": "",
         "mode": "REQUIRED",
-        "type": "String"
+        "type": "STRING"
     },
     {
-        "name": "FINAL_TIME",
+        "column": "RECORD_TYPE",
         "description": "",
         "mode": "REQUIRED",
-        "type": "String"
+        "type": "STRING"
     },
     {
-        "name": "CALLED_NUMBER",
+        "column": "CORRELATOR_CORRELATED_DATE",
         "description": "",
         "mode": "REQUIRED",
-        "type": "String"
+        "type": "STRING"
     },
     {
-        "name": "MESSAGE_PART",
-        "description": "",
-        "mode": "REQUIRED",
-        "type": "INT64"
-    },
-    {
-        "name": "CALLING_NUMBER_COUNTRY",
-        "description": "",
-        "mode": "REQUIRED",
-        "type": "String"
-    },
-    {
-        "name": "RECEIVED_TIME",
-        "description": "",
-        "mode": "REQUIRED",
-        "type": "String"
-    },
-    {
-        "name": "CARRIER_SPID",
-        "description": "",
-        "mode": "REQUIRED",
-        "type": "String"
-    },
-    {
-        "name": "DESTS_SPAM_ANALYSIS_RETURN_CODE",
+        "column": "DLR_CODE",
         "description": "",
         "mode": "REQUIRED",
         "type": "INT64"
     },
     {
-        "name": "FILENAME",
+        "column": "API_APP_ID",
         "description": "",
         "mode": "REQUIRED",
-        "type": "String"
+        "type": "STRING"
     },
     {
-        "name": "BILLABLE",
+        "column": "MESSAGE_DIRECTION",
+        "description": "",
+        "mode": "REQUIRED",
+        "type": "STRING"
+    },
+    {
+        "column": "CALLED_NUMBER_OVERALL_OCN",
+        "description": "",
+        "mode": "REQUIRED",
+        "type": "STRING"
+    },
+    {
+        "column": "PRODUCT",
+        "description": "",
+        "mode": "REQUIRED",
+        "type": "STRING"
+    },
+    {
+        "column": "CALLING_NUMBER_STATE",
+        "description": "",
+        "mode": "REQUIRED",
+        "type": "STRING"
+    },
+    {
+        "column": "SOURCES_SPAM_ANALYSIS_RETURN_CODE",
         "description": "",
         "mode": "REQUIRED",
         "type": "INT64"
     },
     {
-        "name": "LOAD_TIME",
+        "column": "CUSTOMER_ID",
         "description": "",
         "mode": "REQUIRED",
-        "type": "String"
+        "type": "STRING"
     },
     {
-        "name": "AMP_ID",
+        "column": "FINAL_TIME",
         "description": "",
         "mode": "REQUIRED",
-        "type": "String"
+        "type": "STRING"
     },
     {
-        "name": "AMP_NAME",
+        "column": "CALLED_NUMBER",
         "description": "",
         "mode": "REQUIRED",
-        "type": "String"
+        "type": "STRING"
     },
     {
-        "name": "CALLING_NUMBER_AOCN",
+        "column": "MESSAGE_PART",
         "description": "",
         "mode": "REQUIRED",
-        "type": "String"
+        "type": "INT64"
     },
     {
-        "name": "CALLED_NUMBER_AOCN",
+        "column": "CALLING_NUMBER_COUNTRY",
         "description": "",
         "mode": "REQUIRED",
-        "type": "String"
+        "type": "STRING"
     },
     {
-        "name": "MESSAGE_DATE",
+        "column": "RECEIVED_TIME",
+        "description": "",
+        "mode": "REQUIRED",
+        "type": "STRING"
+    },
+    {
+        "column": "CARRIER_SPID",
+        "description": "",
+        "mode": "REQUIRED",
+        "type": "STRING"
+    },
+    {
+        "column": "DESTS_SPAM_ANALYSIS_RETURN_CODE",
+        "description": "",
+        "mode": "REQUIRED",
+        "type": "INT64"
+    },
+    {
+        "column": "FILENAME",
+        "description": "",
+        "mode": "REQUIRED",
+        "type": "STRING"
+    },
+    {
+        "column": "BILLABLE",
+        "description": "",
+        "mode": "REQUIRED",
+        "type": "INT64"
+    },
+    {
+        "column": "LOAD_TIME",
+        "description": "",
+        "mode": "REQUIRED",
+        "type": "STRING"
+    },
+    {
+        "column": "AMP_ID",
+        "description": "",
+        "mode": "REQUIRED",
+        "type": "STRING"
+    },
+    {
+        "column": "AMP_NAME",
+        "description": "",
+        "mode": "REQUIRED",
+        "type": "STRING"
+    },
+    {
+        "column": "CALLING_NUMBER_AOCN",
+        "description": "",
+        "mode": "REQUIRED",
+        "type": "STRING"
+    },
+    {
+        "column": "CALLED_NUMBER_AOCN",
+        "description": "",
+        "mode": "REQUIRED",
+        "type": "STRING"
+    },
+    {
+        "column": "MESSAGE_DATE",
         "description": "",
         "mode": "NULLABLE",
         "type": "DATE"
