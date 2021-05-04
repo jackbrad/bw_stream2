@@ -54,11 +54,6 @@ gcloud beta dataflow flex-template run stream-fakes-top-customers \
 --parameters schemaLocation=${df_test_schema},qps=270
 
 
-gcloud beta dataflow flex-template run  \
---template-file-gcs-location gs://dataflow-templates-us-central1/latest/flex/Streaming_Data_Generator \
---region us-central1 \
---parameters schemaLocation=gs://margedonuts_config/top_customers_stream_config_v2.json,topic=projects/margedonuts/topics/IncomingV2,qps=300
-
 
 #add the schema to the pub/subtopic in BQ's dataflow SQL editor
 gcloud beta data-catalog entries update \
