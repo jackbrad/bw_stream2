@@ -147,7 +147,7 @@
         "column": "CAMPAIGN_ID",
         "description": "",
         "mode": "REQUIRED",
-        "type": "INT64"
+        "type": "STRING"
     },
     {
         "column": "ZONE",
