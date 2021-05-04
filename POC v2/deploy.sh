@@ -57,7 +57,7 @@ gcloud beta dataflow flex-template run stream-fakes-top-customers \
 #add the schema to the pub/subtopic in BQ's dataflow SQL editor
 gcloud beta data-catalog entries update \
  --lookup-entry="pubsub.topic.${project_name}.IncomingV2" \
- --schema-from-file=pubsub_schema_for_inputv2.json
+ --schema-from-file=pubsub_schema_for_inputv2.json 
 
 
 #command to create BQ stream to Raw holding loacation
