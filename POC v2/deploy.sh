@@ -11,6 +11,7 @@ gcloud services enable datacatalog.googleapis.com
 
 #create cloud storage bucket
 storage_configname="${project_name}_config"
+echo "Storage config: $storage_configname"
 gsutil mb gs://$storage_configname
 
 #upload the test_harnes config
