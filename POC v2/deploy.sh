@@ -46,7 +46,7 @@ gcloud pubsub subscriptions create IncomingV2-Sub --topic=IncomingV2
 
 
 #command to create top customer test messages Streaming_Data_Generator
-df_test_schema=gs://${storage_configname}/top_customer_stream_config_v2.json,topic=projects/${project_name}/topics/InboundV2,qps=270
+df_test_schema="gs://${storage_configname}/top_customer_stream_config_v2.json,topic=projects/${project_name}/topics/InboundV2,qps=270"
 echo "Fakes stream config: ${df_test_schema}"
 gcloud beta dataflow flex-template run top_customer-v2-stream-fakes --template-file-gcs-location gs://dataflow-templates-us-central1/latest/flex/Streaming_Data_Generator --region us-central1 --parameters schemaLocation= $df_test_schema
 
