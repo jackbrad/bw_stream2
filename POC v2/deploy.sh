@@ -51,7 +51,7 @@ echo "Fakes stream config: ${df_test_schema}"
 gcloud beta dataflow flex-template run top_customer-v2-stream-fakes --template-file-gcs-location gs://dataflow-templates-us-central1/latest/flex/Streaming_Data_Generator --region us-central1 --parameters schemaLocation="$df_test_schema"
 
 #add the schema to the pub/subtopic in BQ's dataflow SQL editor
-entrylocation=pubsub.topic.${project_name}.IncomingV2_topic
+entrylocation=pubsub.topic.${project_name}.IncomingV2
 echo "Data Catalog Schema Location: ${entrylocation}"
 
 gcloud beta data-catalog entries update --lookup-entry="${entrylocation}" --schema-from-file=pubsub_schema_for_inputv2.json
