@@ -32,7 +32,7 @@ bq mk --table InsightsV2a.MDR_MESSAGE_STATUS schema/MDR_MESSAGE_STATUS.json
 bq mk --table InsightsV2a.MDR_PRODUCT schema/MDR_PRODUCT.json
 bq mk --table InsightsV2a.MDR_RECORD_TYPE schema/MDR_RECORD_TYPE.json
 #Create views... 
-#### Not Done
+#### Not Done 
 
 
 #insert data in the dimension tables
