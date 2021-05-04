@@ -9,12 +9,8 @@ gcloud services enable pubsub.googleapis.com
 gcloud services enable dataflow.googleapis.com
 gcloud services enable datacatalog.googleapis.com
 
-#install uuidgen for cloud storage bucket name
-sudo apt install uuid-runtime
-
 #create cloud storage bucket
-storage_configname=${(uuidgen)}
-storage_configname="config_${storage_configname}"
+storage_configname="${project_name}_config"
 gsutil mb gs://$storage_configname
 
 #upload the test_harnes config
