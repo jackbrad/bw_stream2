@@ -47,19 +47,24 @@ gcloud pubsub subscriptions create IncomingV2-Sub --topic=IncomingV2
 
 #command to create top customer test messages Streaming_Data_Generator
 df_test_schema="gs://${storage_configname}/top_customers_stream_config_v2.json,topic=projects/${project_name}/topics/IncomingV2"
-echo "Fakes stream config: ${df_test_schema}"
+echo "Fakes top customers stream config: ${df_test_schema}"
 gcloud beta dataflow flex-template run stream-fakes-top-customers \
 --template-file-gcs-location gs://dataflow-templates-us-central1/latest/flex/Streaming_Data_Generator \
 --region us-central1 \
 --parameters schemaLocation=${df_test_schema},qps=270
 
-
+#command to create main customer test messages Streaming_Data_Generator
+df_test_schema="gs://${storage_configname}/main_stream_config_v2.json,topic=projects/${project_name}/topics/IncomingV2"
+echo "Fakes main customers stream config: ${df_test_schema}"
+gcloud beta dataflow flex-template run stream-fakes-main-customers \
+--template-file-gcs-location gs://dataflow-templates-us-central1/latest/flex/Streaming_Data_Generator \
+--region us-central1 \
+--parameters schemaLocation=${df_test_schema},qps=30
 
 #add the schema to the pub/subtopic in BQ's dataflow SQL editor
 gcloud beta data-catalog entries update \
  --lookup-entry="pubsub.topic.${project_name}.IncomingV2" \
  --schema-from-file=pubsub_schema_for_inputv2.json 
-
 
 #command to create BQ stream to Raw holding loacation for incoming messages
 gcloud dataflow sql query "SELECT * FROM pubsub.topic.${project_name}.IncomingV2" --job-name dfsql-incomingv2-bq-a --region us-central1 --bigquery-write-disposition write-append --bigquery-project $project_name --bigquery-dataset InsightsV2a --bigquery-table CORRELATED_MDR
