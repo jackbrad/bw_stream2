@@ -1,4 +1,4 @@
-gcloud dataflow sql query 'SELECT 
+ AggregateQuery="SELECT 
     CUSTOMER_ID,
     MESSAGE_STATUS,	
     RECORD_TYPE,
@@ -39,5 +39,6 @@ Group By
     CUSTOMER_NAME,	
     CALLED_NUMBER_STATE,	
     BILLABLE, 
-    MESSAGE_DATE
-   ' --job-name dfsql-Aggregate-Stream --region us-central1 --bigquery-write-disposition write-empty --bigquery-project patrickstarfish --bigquery-dataset InsightsV2a --bigquery-table Aggregates
+    MESSAGE_DATE"
+
+   gcloud dataflow sql query $AggregateQuery --job-name='dfsql' --region us-central1 --bigquery-write-disposition write-empty --bigquery-project patrickstarfish --bigquery-dataset InsightsV2a --bigquery-table Aggregates
