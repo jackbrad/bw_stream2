@@ -19,8 +19,6 @@ gsutil cp main_stream_config_v2.json gs://$storage_configname
 gsutil cp top_customers_stream_config_v2.json gs://$storage_configname
 gsutil cp -r Data gs://$storage_configname
 
-
-
 #create the dataset
 bq --location=US mk -d --description "Insights POC Dataset" InsightsV2a
 
