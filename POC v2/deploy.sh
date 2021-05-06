@@ -17,11 +17,8 @@ gsutil mb gs://$storage_configname
 #upload the test_harnes config
 gsutil cp main_stream_config_v2.json gs://$storage_configname
 gsutil cp top_customers_stream_config_v2.json gs://$storage_configname
-gsutil cp data/MDR_AMP_NAME.csv gs://$storage_configname
-gsutil cp data/MDR_CUSTOMER.csv gs://$storage_configname
-gsutil cp data/MDR_DLR_CODE.csv gs://$storage_configname
-gsutil cp data/MDR_PRODUCT.csv gs://$storage_configname
-gsutil cp data/MDR_RECORD_TYPE.csv gs://$storage_configname
+gsutil cp -r Data gs://$storage_configname
+
 
 
 #create the dataset
@@ -44,13 +41,13 @@ bq mk --table InsightsV2a.MDR_RECORD_TYPE schema/Dimension.json
 #### Not Done 
 
 #insert data in the dimension tables
-bq load --source_format=CSV InsightsV2a.MDR_AMP_NAME gs://$storage_configname/MDR_AMP_NAME.csv schema/MDR_AMP_NAME.json
-bq load --source_format=CSV InsightsV2a.MDR_CUSTOMER gs://$storage_configname/MDR_CUSTOMER.csv schema/MDR_CUSTOMER.json
-bq load --source_format=CSV InsightsV2a.MDR_DLR_CODE gs://$storage_configname/MDR_DLR_CODE.csv schema/MDR_DLR_CODE.json
-bq load --source_format=CSV InsightsV2a.MDR_MESSAGE_DIRECTION gs://$storage_configname/MDR_MESSAGE_DIRECTION.csv schema/MDR_MESSAGE_DIRECTION.json
-bq load --source_format=CSV InsightsV2a.MDR_MESSAGE_STATUS gs://$storage_configname/MDR_RECORD_TYPE.csv schema/MDR_MESSAGE_STATUS.json
-bq load --source_format=CSV InsightsV2a.MDR_PRODUCT gs://$storage_configname/MDR_PRODUCT.csv schema/MDR_PRODUCT.json
-bq load --source_format=CSV InsightsV2a.MDR_RECORD_TYPE gs://$storage_configname/MDR_RECORD_TYPE.csv schema/MDR_RECORD_TYPE.json
+bq load --source_format=CSV InsightsV2a.MDR_AMP_NAME gs://$storage_configname/MDR_AMP_NAME.csv 
+bq load --source_format=CSV InsightsV2a.MDR_CUSTOMER gs://$storage_configname/MDR_CUSTOMER.csv 
+bq load --source_format=CSV InsightsV2a.MDR_DLR_CODE gs://$storage_configname/MDR_DLR_CODE.csv 
+bq load --source_format=CSV InsightsV2a.MDR_MESSAGE_DIRECTION gs://$storage_configname/MDR_MESSAGE_DIRECTION.csv 
+bq load --source_format=CSV InsightsV2a.MDR_MESSAGE_STATUS gs://$storage_configname/MDR_RECORD_TYPE.csv 
+bq load --source_format=CSV InsightsV2a.MDR_PRODUCT gs://$storage_configname/MDR_PRODUCT.csv 
+bq load --source_format=CSV InsightsV2a.MDR_RECORD_TYPE gs://$storage_configname/MDR_RECORD_TYPE.csv 
 
 
 #create incoming message queue in pub/sub with a subscription so we can look at messages
