@@ -65,7 +65,7 @@ gcloud beta data-catalog entries update \
 gcloud dataflow sql query "SELECT * FROM pubsub.topic.${project_name}.IncomingV2" --job-name dfsql-incomingv2-bq-a --region us-central1 --bigquery-write-disposition write-append --bigquery-project $project_name --bigquery-dataset InsightsV2a --bigquery-table CORRELATED_MDR
 
 #setup Aggregate Query Stream
- AggregateQuery="SELECT 
+$AggregateQuery="SELECT 
     CUSTOMER_ID,
     MESSAGE_STATUS,	
     RECORD_TYPE,
