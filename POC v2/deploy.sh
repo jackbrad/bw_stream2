@@ -108,6 +108,6 @@ Group By
     BILLABLE, 
     MESSAGE_DATE"
 
-   gcloud dataflow sql query $AggregateQuery --job-name='dfsql-aggregates' --region us-central1 --bigquery-write-disposition write-empty --bigquery-project ${project_name} --bigquery-dataset InsightsV2a --bigquery-table REALTIME_MDR_AGGREGATE
+   gcloud dataflow sql query "${AggregateQuery}" --job-name='dfsql-aggregates' --region us-central1 --bigquery-write-disposition write-empty --bigquery-project ${project_name} --bigquery-dataset InsightsV2a --bigquery-table REALTIME_MDR_AGGREGATE
 
 
