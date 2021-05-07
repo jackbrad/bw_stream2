@@ -42,7 +42,7 @@ bq mk --table InsightsV2a.MDR_RECORD_TYPE schema/Dimension.json
 bq load --source_format=CSV InsightsV2a.MDR_AMP_NAME gs://$storage_configname/Data/MDR_AMP_NAME.csv 
 bq load --source_format=CSV InsightsV2a.MDR_CUSTOMER gs://$storage_configname/Data/MDR_CUSTOMER.csv 
 bq load --source_format=CSV InsightsV2a.MDR_DLR_CODE gs://$storage_configname/Data/MDR_DLR_CODE.csv 
-bq load --source_format=CSV InsightsV2a.MDR_MESSAGE_DIRECTION gs://$storage_configname/Data/MDR_MESSAGE_DIRECTION.csv 
+bq load --source_format=CSV InsightsV2a.MDR_MESSAGE_DIRECTION gs://$storage_configname/Data/MDR_RECORD_TYPE..csv 
 bq load --source_format=CSV InsightsV2a.MDR_MESSAGE_STATUS gs://$storage_configname/Data/MDR_RECORD_TYPE.csv 
 bq load --source_format=CSV InsightsV2a.MDR_PRODUCT gs://$storage_configname/Data/MDR_PRODUCT.csv 
 bq load --source_format=CSV InsightsV2a.MDR_RECORD_TYPE gs://$storage_configname/Data/MDR_RECORD_TYPE.csv 
