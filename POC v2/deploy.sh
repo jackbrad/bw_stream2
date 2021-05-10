@@ -44,13 +44,6 @@ bq mk --use_legacy_sql=false --view "`cat Views/VW_DIM_MESSAGE_DIRECTION.sql`" I
 bq mk --use_legacy_sql=false --view "`cat Views/VW_DIM_RECORD_TYPE.sql`" InsightsV2a.VW_DIM_RECORD_TYPE
 
 
-
-
-
-
-
-
-
 #insert data in the dimension tables
 bq load --source_format=CSV InsightsV2a.MDR_AMP_NAME gs://$storage_configname/Data/MDR_AMP_NAME.csv 
 bq load --source_format=CSV InsightsV2a.MDR_CUSTOMER gs://$storage_configname/Data/MDR_CUSTOMER.csv 
