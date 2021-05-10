@@ -34,9 +34,23 @@ bq mk --table InsightsV2a.MDR_MESSAGE_DIRECTION schema/Dimension.json
 bq mk --table InsightsV2a.MDR_MESSAGE_STATUS schema/Dimension.json
 bq mk --table InsightsV2a.MDR_PRODUCT schema/Dimension.json
 bq mk --table InsightsV2a.MDR_RECORD_TYPE schema/Dimension.json
-#Create views... 
 
-#### Not Done 
+#Create views... 
+bq mk --use_legacy_sql=false --view "`cat REALTIME_MDR_AGGREGATE.sql`" InsightsV2a.REALTIME_MDR_AGGREGATE
+bq mk --use_legacy_sql=false --view "`cat VW_DIM_AMP_NAME.sql`" InsightsV2a.VW_DIM_AMP_NAME
+bq mk --use_legacy_sql=false --view "`cat VW_DIM_CUSTOMER.sql`" InsightsV2a.VW_DIM_CUSTOMER
+bq mk --use_legacy_sql=false --view "`cat VW_DIM_DLR_CODE.sql`" InsightsV2a.VW_DIM_DLR_CODE
+bq mk --use_legacy_sql=false --view "`cat VW_DIM_MDR_PRODUCT.sql`" InsightsV2a.VW_DIM_MDR_PRODUCT
+bq mk --use_legacy_sql=false --view "`cat VW_DIM_MESSAGE_DIRECTION.sql`" InsightsV2a.VW_DIM_MESSAGE_DIRECTION
+bq mk --use_legacy_sql=false --view "`cat VW_DIM_RECORD_TYPE.sql`" InsightsV2a.VW_DIM_RECORD_TYPE
+
+
+
+
+
+
+
+
 
 #insert data in the dimension tables
 bq load --source_format=CSV InsightsV2a.MDR_AMP_NAME gs://$storage_configname/Data/MDR_AMP_NAME.csv 
