@@ -26,7 +26,6 @@ bq --location=US mk -d --description "Insights POC Dataset" InsightsV2a
 bq mk --table InsightsV2a.CORRELATED_MDR schema/CORRELATED_MDR.json
 bq mk --table InsightsV2a.REALTIME_MDR_AGGREGATE schema/REALTIME_MDR_AGGREGATE.json
 
-
 bq mk --table InsightsV2a.MDR_AMP_NAME schema/Dimension.json
 bq mk --table InsightsV2a.MDR_CUSTOMER schema/Dimension.json
 bq mk --table InsightsV2a.MDR_DLR_CODE schema/Dimension.json
