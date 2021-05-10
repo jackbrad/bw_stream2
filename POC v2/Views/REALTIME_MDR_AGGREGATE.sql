@@ -1,0 +1,22 @@
+select 
+    MESSAGE_COUNT , 
+    MESSAGE_DATE , 
+    MESSAGE_HOUR , 
+    MESSAGE_MINUTE , 
+    MESSAGE_DATE_HR_MIN , 
+    CALLING_NUMBER , 
+    PROVIDER_NAME , 
+    CALLED_NUMBER_COUNTRY , 
+    CALLED_NUMBER_STATE, 
+    BILLABLE, 
+    SOURCE_INSERT_TIMESTAMP , 
+    INSERT_TIMESTAMP , 
+    UPDATE_TIMESTAMP , 
+    upper(AMP_NAME) as dim_amp_key, 
+    upper(DLR_CODE) as dim_dlr_key, 
+    upper(MESSAGE_DIRECTION) as dim_direction_key, 
+    upper(MESSAGE_STATUS) as dim_status_key, 
+    upper (PRODUCT) as dim_product_key, 
+    upper (RECORD_TYPE) as dim_record_type_key, 
+    CUSTOMER_ID as dim_customer_id 
+from InsightsV2a.REALTIME_MDR_AGGREGATE
