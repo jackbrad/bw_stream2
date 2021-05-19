@@ -53,7 +53,6 @@ bq load --source_format=CSV InsightsV2a.MDR_MESSAGE_STATUS gs://$storage_confign
 bq load --source_format=CSV InsightsV2a.MDR_PRODUCT gs://$storage_configname/Data/MDR_PRODUCT.csv 
 bq load --source_format=CSV InsightsV2a.MDR_RECORD_TYPE gs://$storage_configname/Data/MDR_RECORD_TYPE.csv 
 
-
 #create incoming message queue in pub/sub with a subscription so we can look at messages
 gcloud pubsub topics create IncomingV2
 gcloud pubsub subscriptions create IncomingV2-Sub --topic=IncomingV2 
