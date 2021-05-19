@@ -35,7 +35,7 @@ bq mk --table InsightsV2a.MDR_PRODUCT schema/Dimension.json
 bq mk --table InsightsV2a.MDR_RECORD_TYPE schema/Dimension.json
 
 #Create views... 
-bq mk --use_legacy_sql=false --iew "`cat Views/REALTIME_MDR_AGGREGATE.sql`" InsightsV2a.REALTIME_MDR_AGGREGATE
+bq mk --use_legacy_sql=false --view "`cat views/REALTIME_MDR_AGGREGATE.sql`" InsightsV2a.REALTIME_MDR_AGGREGATE
 bq mk --use_legacy_sql=false --view "`cat Views/VW_DIM_AMP_NAME.sql`" InsightsV2a.VW_DIM_AMP_NAME
 bq mk --use_legacy_sql=false --view "`cat Views/VW_DIM_CUSTOMER.sql`" InsightsV2a.VW_DIM_CUSTOMER
 bq mk --use_legacy_sql=false --view "`cat Views/VW_DIM_DLR_CODE.sql`" InsightsV2a.VW_DIM_DLR_CODE
