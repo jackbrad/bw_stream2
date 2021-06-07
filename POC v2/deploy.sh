@@ -23,8 +23,18 @@ gsutil cp -r Data gs://$storage_configname
 bq --location=US mk -d --description "Insights POC Dataset" InsightsV2a
 
 #build tables in data set
-bq mk --table InsightsV2a.CORRELATED_MDR schema/CORRELATED_MDR.json
-bq mk --table InsightsV2a.REALTIME_MDR_AGGREGATE schema/REALTIME_MDR_AGGREGATE.json
+bq mk --table InsightsV2a.CORRELATED_MDR schema/CORRELATED_MDR.json \
+  --time_partitioning_field MESSAGE_DATE \
+  --time_partitioning_type DAY \
+  --time_partitioning_expiration 259200 \
+  --clustering_fields CUSTOMER_ID
+
+bq mk --table InsightsV2a.REALTIME_MDR_AGGREGATE schema/REALTIME_MDR_AGGREGATE.json \
+  --time_partitioning_field MESSAGE_DATE \
+  --time_partitioning_type DAY \
+  --time_partitioning_expiration 259200 \
+  --clustering_fields CUSTOMER_ID
+
 
 bq mk --table InsightsV2a.MDR_AMP_NAME schema/Dimension.json
 bq mk --table InsightsV2a.MDR_CUSTOMER schema/Dimension.json
