@@ -1,0 +1,6 @@
+The Project creates a dataflow pipeline that mirrors international call records that are aggregated and streamed to BQ at any volume. From 0-hundred of thousands of call records per sec. 
+
+Using Pub/Sub, Data flow templates, Data Catalog Schemas (For real time aggregate of messages), and BigQuery Streaming we can achieve a very high throughput into the database which can respond to future 
+
+This is a demo project to provide and example architecture for streaming call records in a common Lambda pattern.  
+
